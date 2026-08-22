@@ -14,7 +14,11 @@ public class IT21A {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.print("Hello World");
+        int a = 10;
+        int b = 5;
+        
+        System.out.println("SUM: " + (a + b));
+        
         // TODO code application logic here
     }
     
