@@ -1,7 +1,7 @@
 
 package lesson6_polymorphism_abstraction;
 
-// Parent class
+
 class Notification {
 
     public void sendNotification() {
@@ -9,7 +9,7 @@ class Notification {
     }
 }
 
-// Child class 1
+
 class EmailNotification extends Notification {
 
     @Override
@@ -18,7 +18,7 @@ class EmailNotification extends Notification {
     }
 }
 
-// Child class 2
+
 class SMSNotification extends Notification {
 
     @Override
@@ -27,7 +27,7 @@ class SMSNotification extends Notification {
     }
 }
 
-// Main class
+
 public class PolymorphismDemo {
 
     public static void main(String[] args) {

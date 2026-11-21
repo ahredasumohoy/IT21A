@@ -1,34 +1,34 @@
 
 package lesson6_polymorphism_abstraction;
 
-// Abstract parent class
+
 abstract class BankAccount {
 
     private String accountHolder;
     private double balance;
 
-    // Constructor
+   
     public BankAccount(String accountHolder, double balance) {
         this.accountHolder = accountHolder;
         this.balance = balance;
     }
 
-    // Abstract method
+
     public abstract void calculateInterest();
 
-    // Concrete method
+    
     public void displayBalance() {
         System.out.println("Account Holder: " + accountHolder);
         System.out.println("Current Balance: " + balance);
     }
 
-    // Getter for balance
+   
     public double getBalance() {
         return balance;
     }
 }
 
-// Child class 1
+
 class SavingsAccount extends BankAccount {
 
     public SavingsAccount(String accountHolder, double balance) {
@@ -42,7 +42,7 @@ class SavingsAccount extends BankAccount {
     }
 }
 
-// Child class 2
+
 class CurrentAccount extends BankAccount {
 
     public CurrentAccount(String accountHolder, double balance) {
@@ -56,7 +56,7 @@ class CurrentAccount extends BankAccount {
     }
 }
 
-// Main class
+
 public class AbstractionDemo {
 
     public static void main(String[] args) {
